@@ -1,79 +1,68 @@
 <!DOCTYPE htm5>
-<html= lang="en">
+<html lang="en">
 
-<img src="logo.png" alt="A beautiful sunrise over the mountains">
+<body>
 
 <h1>Cat Show Registration Page</h1>
 
-<!--entering text info-->
-<form id="survey" method="post" action="process.php">
-<p> 
-    <label for="Owner's Name">Owner</label>
-    <input type="text" name="Owner" id="Owner">
-</p>
-</form>
+<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
-<form id="survey" method="post" action="process.php">
 <p> 
-    <label for="Email">Email</label>
-    <input type="text" name="Email" id="Email">
+    <label for="owner">Owner</label>
+    <input type="text" name="Owner" id="owner">
 </p>
-</form>
+
+<p> 
+    <label for="email">Email</label>
+    <input type="email" name="Email" id="email">
+</p>
 
 <fieldset>
-    <legend>Cat infomation details</legend>
-    <form id="survey" method="post" action="process.php">
-    <p> <label for="Cat's Name">CatName</label>
-    <input type="text" name="CatName" id="CatName"></p>
-    </form>
+    <legend>Cat Information Details</legend>
 
-    <p><label for="rank">Breed</label>
-<select name="Breed" id="Breed">
-<option value="British Shorthair" selected="selected">British Shorthair</option>
-<option value="Burmese">Burmese</option>
-<option value="Manx">Manx</option>
-<option value="Ragdoll">Ragdoll</option>
-<option value="Russian Blue">Russian Blue</option>
-<option value="Siamese">Siamese</option>
-<option value="Other">Other</option>
-</select>
+    <p>
+        <label for="catname">Cat Name</label>
+        <input type="text" name="CatName" id="catname">
     </p>
 
-<fieldset>
-    <legend>Sex</legend>
-    <br>
-    <label><input type="checkbox" name="things[]" value="loc">Male</label>
-    <br>
-    <label><input type="checkbox" name="things[]" value="fud">Female</label>
-<p></p>
-
-</fieldset>
-
-<fieldset>
-    <legend>Competition Categories</legend>
-    <p>Select which categories your would like your cat entered
-    <br>
-    <label><input type="checkbox" name="things[]" value="loc">Best Of Breed</label>
-    <br>
-    <label><input type="checkbox" name="things[]" value="fud">Cutest</label>
-    <br>
-    <label><input type="checkbox" name="things[]" value="fud">Ugliest</label>
+    <p>
+        <label for="breed">Breed</label>
+        <select name="Breed" id="breed">
+            <option>British Shorthair</option>
+            <option>Burmese</option>
+            <option>Manx</option>
+            <option>Ragdoll</option>
+            <option>Russian Blue</option>
+            <option>Siamese</option>
+            <option>Other</option>
+        </select>
     </p>
 
+    <fieldset>
+        <legend>Sex</legend>
+        <label><input type="radio" name="sex" value="male"> Male</label><br>
+        <label><input type="radio" name="sex" value="female"> Female</label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Competition Categories</legend>
+        <label><input type="checkbox" name="category[]" value="best"> Best Of Breed</label><br>
+        <label><input type="checkbox" name="category[]" value="cutest"> Cutest</label><br>
+        <label><input type="checkbox" name="category[]" value="ugliest"> Ugliest</label>
+    </fieldset>
+
 </fieldset>
 
-<!--Comments-->
-
-<form id="survey" method="post" action="process.php">
 <p> 
-    <label for="Comments">Comments</label>
-    <input type="text" name="Comments" id="Comments">
+    <label for="comments">Comments</label>
+    <input type="text" name="Comments" id="comments">
 </p>
-</form>
-
-</fieldset>
 
 <p>
-<input type="submit" value="Submit Survey">
-<input type="reset" value="Reset">
-</p></html=></body></html>
+    <input type="submit" value="Submit Survey">
+    <input type="reset" value="Reset">
+</p>
+
+</form>
+
+</body>
