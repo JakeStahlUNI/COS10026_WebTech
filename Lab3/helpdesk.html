@@ -1,0 +1,79 @@
+<!DOCTYPE htm5>
+<html= lang="en">
+
+<img src="logo.png" alt="A beautiful sunrise over the mountains">
+
+<h1>Cat Show Registration Page</h1>
+
+<!--entering text info-->
+<form id="survey" method="post" action="process.php">
+<p> 
+    <label for="Owner's Name">Owner</label>
+    <input type="text" name="Owner" id="Owner">
+</p>
+</form>
+
+<form id="survey" method="post" action="process.php">
+<p> 
+    <label for="Email">Email</label>
+    <input type="text" name="Email" id="Email">
+</p>
+</form>
+
+<fieldset>
+    <legend>Cat infomation details</legend>
+    <form id="survey" method="post" action="process.php">
+    <p> <label for="Cat's Name">CatName</label>
+    <input type="text" name="CatName" id="CatName"></p>
+    </form>
+
+    <p><label for="rank">Breed</label>
+<select name="Breed" id="Breed">
+<option value="British Shorthair" selected="selected">British Shorthair</option>
+<option value="Burmese">Burmese</option>
+<option value="Manx">Manx</option>
+<option value="Ragdoll">Ragdoll</option>
+<option value="Russian Blue">Russian Blue</option>
+<option value="Siamese">Siamese</option>
+<option value="Other">Other</option>
+</select>
+    </p>
+
+<fieldset>
+    <legend>Sex</legend>
+    <br>
+    <label><input type="checkbox" name="things[]" value="loc">Male</label>
+    <br>
+    <label><input type="checkbox" name="things[]" value="fud">Female</label>
+<p></p>
+
+</fieldset>
+
+<fieldset>
+    <legend>Competition Categories</legend>
+    <p>Select which categories your would like your cat entered
+    <br>
+    <label><input type="checkbox" name="things[]" value="loc">Best Of Breed</label>
+    <br>
+    <label><input type="checkbox" name="things[]" value="fud">Cutest</label>
+    <br>
+    <label><input type="checkbox" name="things[]" value="fud">Ugliest</label>
+    </p>
+
+</fieldset>
+
+<!--Comments-->
+
+<form id="survey" method="post" action="process.php">
+<p> 
+    <label for="Comments">Comments</label>
+    <input type="text" name="Comments" id="Comments">
+</p>
+</form>
+
+</fieldset>
+
+<p>
+<input type="submit" value="Submit Survey">
+<input type="reset" value="Reset">
+</p></html=></body></html>
