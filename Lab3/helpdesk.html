@@ -1,68 +1,125 @@
-<!DOCTYPE htm5>
+<!DOCTYPE html>
 <html lang="en">
+<head>
 
-<body>
+<meta charset="UTF-8">
+<meta name = "description" content="This page is about the Web Technology Project Unit">
+<meta name = "keyword" content="Technology">
+<meta name="author" content="Ethan">
 
-<h1>Cat Show Registration Page</h1>
+<title>Woohoo!</title>
+<a href="https://www.swinburne.edu.au/">
+    <img src="logo.png" alt="Swinburne Logo">
+</a>
 
-<form method="post" action="http://mercury.swin.edu.au/it000000/formtest.php">
 
-<p> 
-    <label for="owner">Owner</label>
-    <input type="text" name="Owner" id="owner">
-</p>
+<h1>CWA Help Desk Appointment</h1>
 
-<p> 
-    <label for="email">Email</label>
-    <input type="email" name="Email" id="email">
-</p>
 
-<fieldset>
-    <legend>Cat Information Details</legend>
-
-    <p>
-        <label for="catname">Cat Name</label>
-        <input type="text" name="CatName" id="catname">
-    </p>
-
-    <p>
-        <label for="breed">Breed</label>
-        <select name="Breed" id="breed">
-            <option>British Shorthair</option>
-            <option>Burmese</option>
-            <option>Manx</option>
-            <option>Ragdoll</option>
-            <option>Russian Blue</option>
-            <option>Siamese</option>
-            <option>Other</option>
-        </select>
-    </p>
-
-    <fieldset>
-        <legend>Sex</legend>
-        <label><input type="radio" name="sex" value="male"> Male</label><br>
-        <label><input type="radio" name="sex" value="female"> Female</label>
-    </fieldset>
-
-    <fieldset>
-        <legend>Competition Categories</legend>
-        <label><input type="checkbox" name="category[]" value="best"> Best Of Breed</label><br>
-        <label><input type="checkbox" name="category[]" value="cutest"> Cutest</label><br>
-        <label><input type="checkbox" name="category[]" value="ugliest"> Ugliest</label>
-    </fieldset>
-
-</fieldset>
-
-<p> 
-    <label for="comments">Comments</label>
-    <input type="text" name="Comments" id="comments">
+<p>
+    The Help Desk is located at ACT620. Open to 10:30 to 19:00 Monday to Friday.
 </p>
 
 <p>
-    <input type="submit" value="Submit Survey">
-    <input type="reset" value="Reset">
+    Check Blackboard for when CWA tutors will be there.
 </p>
 
+
+<form action="http://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <fieldset>
+        <legend>Student details</legend>
+        
+        <label for="student_id">Student ID:</label>
+        <input type="number" id="student_id" name="student_id" min="0000000" max="9999999999" required="required">
+        <br>
+        <br>
+        <label for="given_name">Given Name:</label>
+        <input type="text" id="given_name" name="given_name" maxlength="15" pattern="[A-Za-z]+" required="required"> 
+        <label for="family_name">Family Name:</label>
+        <input type="text" id="family_name" name="family_name" maxlength="15" pattern="[A-Za-z]+" required="required">
+        <br>
+        
+        
+    </fieldset>
+
+    <fieldset>
+        <legend>Your unit</legend>
+
+        <input type="radio" id="cos10011" name="unit" required="required">
+        <label>COS10011</label>
+        
+                
+        <input type="radio" id="cos60004" name="unit" required>
+        <label>COS60004</label>
+
+        <input type="radio" id="cos60007" name="unit" required>
+        <label>COS60007</label>
+        <br>
+        <br>
+
+         <label for="tutor">Your Tutor:</label>
+        <select id="tutor" name="tutor">
+            <option value="tutor">Please Select</option>
+            <option value="tutor1">LeBron James</option>
+            <option value="tutor2">Bam Adebayo</option>
+            <option value="tutor3">A'ja Wilson</option>
+            <option value="tutor4">Savannah James</option>
+            <option value="tutor5">Alexander Volkanovski</option>
+        </select>
+        
+        
+        
+        <br>
+        
+       
+    </fieldset>
+
+<fieldset>
+                    <legend>Issue</legend>
+
+         <label>
+           HTML  <input type="checkbox" name="html" checked="checked"> 
+        </label>
+
+        <label>
+           CSS  <input type="checkbox" name="css"> 
+        </label>
+
+        <label>
+           JavaScript  <input type="checkbox" name="javascript"> 
+        </label>
+
+        <label>
+           PHP  <input type="checkbox" name="php"> 
+        </label>
+
+        <label>
+           MySQL  <input type="checkbox" name="mysql"> 
+        </label>
+        <br>
+        <br>
+        
+        <label for="des_of_iss">Description of Issue</label>
+        <br>
+        <textarea id="des_of_iss" name="des_of_iss" rows="6" cols="40" placeholder="Write description of your problem here..."></textarea>
+  
+
+        </fieldset>
+
+
+        <fieldset>
+        <legend>Preferred Date / Time</legend>
+        
+        <label for="date">Date</label>
+        <input type="text" id="date" name="date" placeholder="dd/mm/yyyy"      pattern="^(?!dd/mm/yyyy$).+" required="required" >
+        <br>
+        <label for="time">Time</label>
+        <input type="text" id="time" name="time" placeholder="00:00"        pattern="^(?!00:00$).+" required="required" > 
+        </fieldset>
+        <br>
+<input type="submit" value="Book">
+<input type="reset" value="Reset Form">
 </form>
 
 </body>
+</html>
